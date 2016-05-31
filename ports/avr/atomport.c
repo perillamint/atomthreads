@@ -325,17 +325,18 @@ void avrInitSystemTickTimer ( void )
  *
  * @return None
  */
-ISR (TIMER1_COMPA_vect)
-{
-    /* Call the interrupt entry routine */
-    atomIntEnter();
-
-    /* Call the OS system tick handler */
-    atomTimerTick();
-
-    /* Call the interrupt exit routine */
-    atomIntExit(TRUE);
-}
+//Disable for linking.
+//ISR (TIMER1_COMPA_vect)
+//{
+//    /* Call the interrupt entry routine */
+//    atomIntEnter();
+//
+//    /* Call the OS system tick handler */
+//    atomTimerTick();
+//
+//    /* Call the interrupt exit routine */
+//    atomIntExit(TRUE);
+//}
 
 
 /**
@@ -350,7 +351,9 @@ ISR (TIMER1_COMPA_vect)
  *
  * @return None
  */
-ISR (BADISR_vect)
-{
-    /* Empty */
-}
+
+//Disable for linking.
+//ISR (BADISR_vect)
+//{
+//    /* Empty */
+//}
